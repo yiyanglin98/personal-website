@@ -1,3 +1,3 @@
-# Yiyang (David) Lin's Personal Website
-## Created for fun, mostly
-
+# Yiyang (David) Lin's Personal Website (WIP)
+- Created for fun, mostly
+- A place for personal projects demoing
