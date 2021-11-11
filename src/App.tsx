@@ -7,9 +7,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to hahaha.
-        </p>
+        <h1>
+          Hi! I am Yiyang Lin. 
+        </h1>
+        <h2>
+          You can just call me David.
+        </h2>
         <a
           className="App-link"
           href="https://reactjs.org"
