@@ -27,7 +27,27 @@ h2 {
   opacity:0;
   animation: fadeIn 2s ease-out 1s;
   animation-fill-mode: forwards;
-  
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 6vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+}
+
+.mcs {
+  text-decoration: none;
+  color: #798153;
+  box-shadow: inset 0 -0.1em #e1b47c;
+  transition: .2s linear
+}
+
+.mcs:hover {
+  color: #e1b47c;
+  box-shadow:none
 }
 
 svg {

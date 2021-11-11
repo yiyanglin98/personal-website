@@ -17,18 +17,18 @@ function App() {
             You can just call me David
           </h2>
           <h2>
-            I am a MCS student at UIUC
+            I am a <a className="mcs" href="https://cs.illinois.edu/academics/graduate/professional-mcs/campus-master-computer-science">MCS</a> student at UIUC
           </h2>
         </header>
       </div>
-      {Array.from({length: 25}, (_, index) => index + 1).map((i) => {
+      {/* {Array.from({length: 25}, (_, index) => index + 1).map((i) => {
         return <header className="App-header" style={{opacity: 0.2}}>
         <h1 style={{fontSize: `${0.5*i}vw`}}>
           Hi! 
         </h1>
        
       </header>
-      })}
+      })} */}
             
     </div>
 
