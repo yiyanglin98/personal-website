@@ -15,27 +15,32 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 4vw;
   font-weight:bolder;
   animation: fadeIn 2s ease-out;
   animation-fill-mode: forwards;
 }
 
 h2 {
-  font-size: 3vw;
   font-weight:lighter;
   opacity:0;
   animation: fadeIn 2s ease-out 1s;
   animation-fill-mode: forwards;
 }
 
-@media screen and (max-width: 600) {
-  h1 {
-    font-size: 10vw;
-  }
-  h2 {
-    font-size: 8vw;
-  }
+
+@media (min-width: 0px) {
+  h1 { font-size: 4rem; }
+  h2 { font-size: 2rem; }
+}
+
+@media (min-width: 400px) {
+  h1 { font-size: calc(3rem + 3vw); }
+  h2 { font-size: calc(2rem + 2vw); }
+}
+
+@media (min-width: 1001px){
+  h1 { font-size: 4vw; }
+  h2 { font-size: 3.5rem; }
 }
 
 .mcs {
