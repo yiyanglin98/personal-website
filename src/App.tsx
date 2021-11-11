@@ -17,13 +17,13 @@ function App() {
             You can just call me David
           </h2>
           <h2>
-            I am a MCS at UIUC
+            I am a MCS student at UIUC
           </h2>
         </header>
       </div>
       {Array.from({length: 25}, (_, index) => index + 1).map((i) => {
-        return <header className="App-header" style={{opacity: 0.2, fontSize: `${i}vw`}}>
-        <h1 style={{opacity: 0.2, fontSize: `${0.5*i}vw`}}>
+        return <header className="App-header" style={{opacity: 0.2}}>
+        <h1 style={{fontSize: `${0.5*i}vw`}}>
           Hi! 
         </h1>
        
