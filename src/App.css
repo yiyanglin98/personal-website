@@ -1,3 +1,12 @@
+
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 h1, h2 {
   margin: 0 0 0 0;
   color: #798153;
