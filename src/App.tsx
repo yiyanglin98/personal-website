@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import DecoButton from './components/DecoButton';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
             You can just call me David
           </h2>
           <h2>
-            I am a <a className="mcs" href="https://cs.illinois.edu/academics/graduate/professional-mcs/campus-master-computer-science">MCS</a> student at UIUC
+            I am a <DecoButton link="https://cs.illinois.edu/academics/graduate/professional-mcs/campus-master-computer-science" newPage={true} text="MCS"/> student at UIUC
           </h2>
         </header>
       </div>
