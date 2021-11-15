@@ -39,15 +39,17 @@ function App() {
           <path d="M0,260 C150,200 350,0 500,200 L500,00 L0,0 Z" style={{fill: "#4a4844"}}></path>
 
       </svg>
-      <DecoText>Game Project</DecoText>
+      <DecoText title>My Game Project</DecoText> 
+      {/* margin: 10px 10px 10px 10px;
+    color: #e1b47c;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    font-weight:bolder;
+    font-size: 3rem; */}
+      <p style={{margin: "0 0 0 10px", color: "#e1b47c"}}>move cursor on any video to see more</p>
         <GameCard />
-      </div>
-      
-      
-            
+      </div>      
     </div>
-
-    
   );
 }
 
