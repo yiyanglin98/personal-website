@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="header-container">
-        <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" className="background-svg">
+        <svg viewBox="0 0 500 300" preserveAspectRatio="xMinYMin meet" className="background-svg" style={{ zIndex:-1}}>
           <path d="M0,260 C150,200 350,0 500,200 L500,00 L0,0 Z" style={{fill: "#f3e0cc"}}></path>
           
         </svg>
@@ -35,18 +35,12 @@ function App() {
 
       
       <div className="projects-container" style={{backgroundColor:"#4a4844"}}>
-      <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" className="game-svg">
-          <path d="M0,260 C150,200 350,0 500,200 L500,00 L0,0 Z" style={{fill: "#4a4844"}}></path>
+      <svg viewBox="0 0 500 300" preserveAspectRatio="xMinYMin meet" className="game-svg" style={{ zIndex:-1}}>
+          <path d="M0,260 C50,200 100,0 500,100 L500,00 L0,0 Z" style={{fill: "#4a4844"}}></path>
 
       </svg>
       <DecoText title>My Game Project</DecoText> 
-      {/* margin: 10px 10px 10px 10px;
-    color: #e1b47c;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.5px;
-    font-weight:bolder;
-    font-size: 3rem; */}
-      <p style={{margin: "0 0 0 10px", color: "#e1b47c"}}>move cursor on any video to see more</p>
+      <p style={{margin: "0 0 30px 10px", color: "#e1b47c"}}>move cursor on any video to see more</p>
         <GameCard />
       </div>      
     </div>
