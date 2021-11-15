@@ -1,18 +1,28 @@
 import React from 'react';
 import './App.css';
 import DecoButton from './components/DecoButton';
+import GameCard from './components/GameCard';
+import DecoText from './components/DecoText';
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
-          <path d="M0,260 C150,200 350,0 500,100 L500,00 L0,0 Z" style={{fill: "#f3e0cc", zIndex: -1}}></path>
+      <div className="header-container">
+        <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" className="background-svg">
+          <path d="M0,260 C150,200 350,0 500,200 L500,00 L0,0 Z" style={{fill: "#f3e0cc"}}></path>
           
         </svg>
-        <header className="App-header">
+        <header>
+        {Array.from({length: 18}, (_, index) => index + 1).map((i) => {
+        return <header className="App-header" style={{opacity: 0.1, position: "absolute"}}>
+        <h1 style={{fontSize: `${0.5*i}vw`}}>
+          Hi! 
+        </h1>
+       
+      </header>
+      })}
           <h1>
-            Hi! I am Yiyang Lin
+            Hi! <br/><br/>I am Yiyang Lin
           </h1>
           <h2>
             You can just call me David
@@ -22,14 +32,18 @@ function App() {
           </h2>
         </header>
       </div>
-      {/* {Array.from({length: 25}, (_, index) => index + 1).map((i) => {
-        return <header className="App-header" style={{opacity: 0.2}}>
-        <h1 style={{fontSize: `${0.5*i}vw`}}>
-          Hi! 
-        </h1>
-       
-      </header>
-      })} */}
+
+      
+      <div className="projects-container" style={{backgroundColor:"#4a4844"}}>
+      <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" className="game-svg">
+          <path d="M0,260 C150,200 350,0 500,200 L500,00 L0,0 Z" style={{fill: "#4a4844"}}></path>
+
+      </svg>
+      <DecoText>Game Project</DecoText>
+        <GameCard />
+      </div>
+      
+      
             
     </div>
 
