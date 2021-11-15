@@ -8,10 +8,10 @@ body {
 }
 
 h1, h2 {
-  margin: 0 0 0 0;
+  margin: 0 0 0 4vw;
   color: #798153;
   font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 h1 {
@@ -43,7 +43,7 @@ h2 {
 
 @media (min-width: 1001px){
   h1 { font-size: 4vw; }
-  h2 { font-size: 3.5rem; }
+  h2 { font-size: 3rem; }
 }
 
 .background-svg {
@@ -85,7 +85,7 @@ h2 {
 
   100% {
     opacity:1;
-    margin-left: 1vw;
+    margin-left: 2vw;
     margin-bottom: 0;
   }
 }

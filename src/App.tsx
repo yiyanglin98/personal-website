@@ -40,7 +40,7 @@ function App() {
 
         </svg>
         <DecoText title display>My Game Project</DecoText> 
-        <p style={{margin: "0 0 30px 10px", color: "#e1b47c"}}>move cursor on any video to see more</p>
+        <p style={{margin: "0 0 30px 40px", color: "#e1b47c"}}>move cursor on any video to see more</p>
         <div style={{width: "50%", margin: "0 auto"}}>
           <GameCard 
               link="http://publish.illinois.edu/david-lin/files/2020/08/Screen-Recording-2020-08-02-at-11.47.00-PM.mp4" 
