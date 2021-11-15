@@ -8,7 +8,7 @@ function GameCard() {
     const [hover3, setHover3] = useState(false);
     const [hover4, setHover4] = useState(false);
     return (
-        <div style={{zIndex:12, width: "50%", margin: "0 auto"}}>
+        <div style={{zIndex:12, width: "70%", margin: "0 auto"}}>
             
             <div style={{display: hover1 ? "inherit" : "none", position: "absolute", fontStyle: "italic"}}><DecoText title={false}>flight simulator with shooting, created with Unity</DecoText></div>
             <video height="auto" width="500" autoPlay muted loop style={{margin: "25px 100px 25px 100px", opacity: hover1 ? 0.2 : 1}} onMouseEnter={()=> {setHover1(true)}} onMouseLeave={()=> {setHover1(false)}}>
