@@ -44,7 +44,7 @@ function App() {
         <div style={{width: "50%", margin: "0 auto"}}>
           <GameCard 
               link="http://publish.illinois.edu/david-lin/files/2020/08/Screen-Recording-2020-08-02-at-11.47.00-PM.mp4" 
-              text="flight simulator with shooting, created with Unity"/>
+              text="fighter aircraft simulator with shooting, created with Unity"/>
             <GameCard 
               link="http://publish.illinois.edu/david-lin/files/2021/11/Driving.mp4" 
               text="car chasing game, created with Unity"/>
