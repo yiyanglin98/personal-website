@@ -35,13 +35,26 @@ function App() {
 
       
       <div className="projects-container" style={{backgroundColor:"#4a4844"}}>
-      <svg viewBox="0 0 500 300" preserveAspectRatio="xMinYMin meet" className="game-svg" style={{ zIndex:-1}}>
-          <path d="M0,260 C50,200 100,0 500,100 L500,00 L0,0 Z" style={{fill: "#4a4844"}}></path>
+        <svg viewBox="0 0 500 300" preserveAspectRatio="xMinYMin meet" className="game-svg" style={{ zIndex:-1}}>
+            <path d="M0,260 C50,200 100,0 500,100 L500,00 L0,0 Z" style={{fill: "#4a4844"}}></path>
 
-      </svg>
-      <DecoText title>My Game Project</DecoText> 
-      <p style={{margin: "0 0 30px 10px", color: "#e1b47c"}}>move cursor on any video to see more</p>
-        <GameCard />
+        </svg>
+        <DecoText title display>My Game Project</DecoText> 
+        <p style={{margin: "0 0 30px 10px", color: "#e1b47c"}}>move cursor on any video to see more</p>
+        <div style={{width: "50%", margin: "0 auto"}}>
+          <GameCard 
+              link="http://publish.illinois.edu/david-lin/files/2020/08/Screen-Recording-2020-08-02-at-11.47.00-PM.mp4" 
+              text="flight simulator with shooting, created with Unity"/>
+            <GameCard 
+              link="http://publish.illinois.edu/david-lin/files/2021/11/Driving.mp4" 
+              text="car chasing game, created with Unity"/>
+            <GameCard 
+              link="http://publish.illinois.edu/david-lin/files/2021/11/demo_SparkVideo.mp4" 
+              text="movie guessing game, created with React/Django/MySQL"/>
+            <GameCard 
+              link="http://publish.illinois.edu/david-lin/files/2021/11/cg.mp4" 
+              text="flight simulator and terrain generation, created with WebGL"/>
+        </div>
       </div>      
     </div>
   );
