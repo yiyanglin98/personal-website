@@ -40,7 +40,7 @@ function App() {
             <path d="M0,260 C50,200 100,0 500,100 L500,00 L0,0 Z" style={{fill: "#4a4844"}}></path>
         </svg>
 
-        <div style={{width: "50%", margin: "0 auto"}}>
+        <div>
           <DecoText title display>Projects</DecoText> 
           <p style={{margin: "0 0 30px 40px", color: "#798153"}}>To be Displayed...</p>
         </div>
@@ -50,24 +50,28 @@ function App() {
               text="fighter aircraft simulator with shooting, created with Unity"
               title="project1"/> */}
 
-        <div style={{width: "50%", margin: "0 auto"}}>
+        <div>
           <DecoText title display>Game-related</DecoText> 
           <p style={{margin: "0 0 30px 40px", color: "#798153"}}>move cursor on any video to see more</p>
         </div>
         
-        <div style={{width: "50%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", margin: "0 auto"}}>
-          <GameCard 
+        <div className="flex flex-col">
+          <div className="inline-block"><GameCard 
               link="http://publish.illinois.edu/david-lin/files/2020/08/Screen-Recording-2020-08-02-at-11.47.00-PM.mp4" 
-              text="fighter aircraft simulator with shooting, created with Unity"/>
-            <GameCard 
+              text="fighter aircraft simulator with shooting, created with Unity"/></div>
+          <div className="inline-block"><GameCard 
               link="http://publish.illinois.edu/david-lin/files/2021/11/Driving.mp4" 
-              text="car chasing game, created with Unity"/>
-            <GameCard 
+              text="car chasing game, created with Unity"/></div>
+          <div className="inline-block"><GameCard 
               link="http://publish.illinois.edu/david-lin/files/2021/11/demo_SparkVideo.mp4" 
-              text="movie guessing game, created with React/Django/MySQL"/>
-            <GameCard 
+              text="movie guessing game, created with React/Django/MySQL"/></div>
+          <div className="inline-block"><GameCard 
               link="http://publish.illinois.edu/david-lin/files/2021/11/cg.mp4" 
-              text="flight simulator and terrain generation, created with WebGL"/>
+              text="flight simulator and terrain generation, created with WebGL"/></div>
+          
+            
+            
+            
         </div>
       </div>      
     </div>
