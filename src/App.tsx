@@ -3,6 +3,7 @@ import './App.css';
 import DecoButton from './components/DecoButton';
 import GameCard from './components/GameCard';
 import DecoText from './components/DecoText';
+import ProjectCard from './components/ProjectCard';
 
 function App() {
   return (
@@ -40,8 +41,18 @@ function App() {
         </svg>
 
         <div style={{width: "50%", margin: "0 auto"}}>
-          <DecoText title display>My Game Project</DecoText> 
-          <p style={{margin: "0 0 30px 40px", color: "#e1b47c"}}>move cursor on any video to see more</p>
+          <DecoText title display>Projects</DecoText> 
+          <p style={{margin: "0 0 30px 40px", color: "#798153"}}>To be Displayed...</p>
+        </div>
+
+        {/* <ProjectCard 
+              link="https://courses.grainger.illinois.edu/cs438/fa2021/images/internet2.jpeg" 
+              text="fighter aircraft simulator with shooting, created with Unity"
+              title="project1"/> */}
+
+        <div style={{width: "50%", margin: "0 auto"}}>
+          <DecoText title display>Game-related</DecoText> 
+          <p style={{margin: "0 0 30px 40px", color: "#798153"}}>move cursor on any video to see more</p>
         </div>
         
         <div style={{width: "50%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", margin: "0 auto"}}>
