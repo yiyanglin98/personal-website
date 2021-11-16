@@ -3,7 +3,7 @@ import './App.css';
 import DecoButton from './components/DecoButton';
 import GameCard from './components/GameCard';
 import DecoText from './components/DecoText';
-import ProjectCard from './components/ProjectCard';
+// import ProjectCard from './components/ProjectCard';
 
 function App() {
   return (
