@@ -3,7 +3,7 @@ import './App.css';
 import DecoButton from './components/DecoButton';
 import GameCard from './components/GameCard';
 import DecoText from './components/DecoText';
-// import ProjectCard from './components/ProjectCard';
+import ProjectCard from './components/ProjectCard';
 
 function App() {
   return (
@@ -42,20 +42,23 @@ function App() {
 
         <div>
           <DecoText title display>Projects</DecoText> 
-          <p style={{margin: "0 0 30px 40px", color: "#798153"}}>To be Displayed...</p>
-        </div>
-
-        {/* <ProjectCard 
-              link="https://courses.grainger.illinois.edu/cs438/fa2021/images/internet2.jpeg" 
-              text="fighter aircraft simulator with shooting, created with Unity"
-              title="project1"/> */}
-
-        <div>
-          <DecoText title display>Game-related</DecoText> 
           <p style={{margin: "0 0 30px 40px", color: "#798153"}}>move cursor on any video to see more</p>
         </div>
+
+        <div className="grid grid-rows-2 gap-4">
+          <ProjectCard 
+                link="http://publish.illinois.edu/david-lin/files/2021/11/MovieHub1.png" 
+                text="A web app created with React for the frontend, Django for the backend and MongoDB/MySQL as the databases"
+                title="MovieHub"/>
+          <ProjectCard 
+                link="http://publish.illinois.edu/david-lin/files/2021/11/CT1.png" 
+                text="A video lecture platform built with React and .NET, used by students at UIUC for more than 30 courses. Worked on transcriptions editing, caption searching, new course creation and video embedding features/pages"
+                title="ClassTranscribe"/>
+        </div>
+
+        <DecoText title display>Game-related Projects</DecoText> 
         
-        <div className="flex flex-col">
+        <div className="grid grid-rows-4 gap-1">
           <div className="inline-block"><GameCard 
               link="http://publish.illinois.edu/david-lin/files/2020/08/Screen-Recording-2020-08-02-at-11.47.00-PM.mp4" 
               text="fighter aircraft simulator with shooting, created with Unity"/></div>
